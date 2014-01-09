@@ -1,0 +1,45 @@
+Following examples demontrate using of datetime-lock :
+
+1) Example 1: hollydays
+
+    We went to hollydays from the 20/05/2013 up to the 30/05/2013.
+    We left the house at 08:00 a.m. and came back home
+    at 12:00:00 p.m. from our hollydays.
+
+$ sudo datetime-lock --from-date 20/05/2013 --to-date 30/05/2013 --from-time 07:59:59 --to-time 08:05:00
+
+
+2) Example 2 : the secretary of a company works from
+   8:00 a.m. to 12:00 p.m. in the morning,
+   and from 14 :00 p.m. to 18:00 p.m. in the afternoon,
+   on mondays, thuesdays, wednesdays, thursdays and fridays.
+   The company is closed the week end: saturdays and sundays.
+   so we create 3 litlle script executed from cron.
+
+   script lunchtime-security.sh.
+   script night-security.sh.
+   script week-end-security.sh.
+
+   lunchtime-security.sh
+   #/bin/bash
+   sudo datetime-lock --week-days --time-slice 11:59:59-14:00:00
+
+   night-security.sh
+   #/bin/bash
+   sudo datetime-lock --from-date $(datetime-config -s) --to-date $(datetime-config -d 24:00:00) --from-time 18:00:00 --to-time $(datetime-config -t 15:00:00)
+
+   week-end-security.sh.
+   #/bin/bash
+   sudo datetime-lock --from-date $(datetime-config -s) --to-date $(datetime-config -d 72:00:00) --from-time 18:00:00 --to-time $(datetime-config -t 15:00:00)
+
+   We launch the scripts per cron
+   $ sudo crontab -e
+   # m h  dom mon dow   command
+     0 11   *   *  1-5   sudo lunchtime-security.sh
+     0 17   *   *  1-4   sudo night-security.sh
+     0 17   *   *   5    sudo week-end-security.sh.
+
+3) Example 3: I am working every day and suddenly I receive a mail from my girlfriend... she wants to fuck !!!
+   I can fuck her during 2 hours and need 15 minutes to go to the hotel.
+   $ sudo datetime-lock --today --from-timer $(datetime-config -t 0:0:0)-2:30:00
+
