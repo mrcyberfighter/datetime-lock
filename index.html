@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Datetime-lock : datetime-lock is a little configurable security tool for ubuntu who can deny the physical access to your system, against bad intruders even if he know your password,according to the configuration of the programm." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Datetime-lock</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mrcyberfighter/datetime-lock">View on GitHub</a>
+
+          <h1 id="project_title">Datetime-lock</h1>
+          <h2 id="project_tagline">datetime-lock is a little configurable security tool for ubuntu who can deny the physical access to your system, against bad intruders even if he know your password,according to the configuration of the programm.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mrcyberfighter/datetime-lock/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mrcyberfighter/datetime-lock/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="datetime-lock" class="anchor" href="#datetime-lock"><span class="octicon octicon-link"></span></a>datetime-lock</h1>
+
+<p>datetime-lock is a little configurable security tool for ubuntu who can deny the physical access to your system according to the configuration of the programm. 
+You are invited to write some start-up scripts for others distributions as ubuntu, 
+because i think the programm have not to be adapt himself.</p>
+
+<p>How does it work ?<br>
+datetime-lock must be first configurated throught the different available<br>
+command-line options, giving multiple ways to set:<br>
+-A start date and a start time.<br>
+-An end date and an end time.<br>
+Or with the regular date settings to set as:<br>
+-A or some specific days of week like:<br>
+  -&gt; --today<br>
+  -&gt; --weekend-days (saturday and sunday).<br>
+  -&gt; --week-days (monday, thuesday, wednesday, thursday and friday.)<br>
+  -&gt; --days (The selected days from the weekdays list.)<br>
+During this time, slice your system is protected against some physical<br>
+present offender with bad intentions, like cracking your password, even if<br>
+he does not know it before the violation of your home, your workplace or<br>
+where ever your system is located.                                           </p>
+
+<p>After datetime-lock configuration the programm print a summary with the<br>
+currently settings.<br>
+!!! The programm does not ask for any confirmation: if you make an mistake<br>
+    during the configuration, you will see it in the clear printed summary;<br>
+    if you want to reset the settings do not block the system with an error<br>
+    way you must call the --disable option who will reset the configuration<br>
+    so that your system is not locked with datetime-lock.                    </p>
+
+<pre><code>Anyway else the locking is now activated and your system is untouchable  
+for the configurated time slice.                                         
+</code></pre>
+
+<p>The locking mechanism is an automatic directly shutdown process who will<br>
+prevent from bad intentions intruder, to tip the password, even if he<br>
+knows it, because the system will automatically shutdown by booting.         </p>
+
+<p>In addition datetime-lock log system attemps which you can read with the<br>
+--display-logs options.                                                      </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Datetime-lock maintained by <a href="https://github.com/mrcyberfighter">mrcyberfighter</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
