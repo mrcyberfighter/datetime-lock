@@ -15,7 +15,7 @@ return 1
 fi
 
 sudo rm /usr/local/bin/datetime-lock
-sudo rm /usr/local/bin/datetime-config
+
 sudo rm /etc/init.d/datetime-lock.sh
 
 run_level=$(runlevel)
