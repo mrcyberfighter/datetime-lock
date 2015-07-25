@@ -20,7 +20,9 @@ gcc -Wall -Wextra datetime-lock.c -o datetime-lock 2> /dev/null # Don't display 
 
 sudo mv datetime-lock /usr/local/bin/ # move the binary to users binary folder
 
-
+sudo datetime-lock --disable          # Initialize the program otherwise 
+                                      # if you don't configure minimum one time 
+                                      # the program it will block your system forever.
 
 sudo chown root:root /usr/local/bin/datetime-lock  # datetime-lock must be run as root only. 
 sudo chmod go-rwx /usr/local/bin/datetime-lock     # datetime-lock must be run as root only.  
