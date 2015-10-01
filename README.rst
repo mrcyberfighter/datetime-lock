@@ -6,7 +6,7 @@ datetime-lock
   
   :Writing by: Eddie Brüggemann
   
-  :Language: python 2.7.3
+  :Language: C
   
   :Contact: mrcyberfighter@gmail.com
   
