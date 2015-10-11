@@ -29,7 +29,7 @@ How does it work ?
    
    -A or some specific days of week like:                                       
      
-     ..
+    ::
      
       --today                                                                 
       --weekend-days (saturday and sunday).                                   
@@ -63,9 +63,7 @@ How does it work ?
    ``--display-logs`` options.                                                      
                                                                                 
    **Note**: take care by the special time setting midnight because midnight is the first time from the current day.                                   
-                                                                              
 
----------------
 datetime-config
 ---------------                               
 
@@ -73,13 +71,13 @@ datetime-config
   datetime-lock in case of an automatic configuration with cron, useable with  
   the substitution command: 
                                                     
-  .. 
+  :: 
   
     $ $(datetime-config -s) # per example                                        
  
   Who support following options:                                               
     
-    .. 
+    :: 
                                                                                
        -s              [start]                                                
        -d  hh:mm:ss    [date]                                                 
