@@ -103,3 +103,33 @@ Advices
  + If you have an key protected box where to set the computer in, with all  
    for the air set your computer in or by you an adapted furniture.          
                                                                               
+Copyright
+---------
+
+    **datetime-lock** a little configurable **security tool** for **Ubuntu**.
+
+    Copyright (C) 2014 Bruggemann Eddie
+  
+
+    This file is part of **datetime-lock**.
+
+    **datetime-lock** is free software: you can redistribute it and/or modify
+
+    it under the terms of the GNU General Public License as published by
+
+    the Free Software Foundation, either version 3 of the License, or
+
+    (at your option) any later version.
+
+
+    **datetime-lock** is distributed in the hope that it will be useful,
+
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+
+    along with **datetime-lock**. If not, see <http://www.gnu.org/licenses/>
