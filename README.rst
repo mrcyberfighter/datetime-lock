@@ -1,4 +1,3 @@
-=============
 datetime-lock
 =============
 
@@ -17,9 +16,6 @@ datetime-lock
   **NOTE:** You are invited to write some start-up scripts for others distributions as ubuntu, 
   because i think the programm have not to be adapt himself.
   
-
-
-------------------
 How does it work ? 
 ------------------
                                                            
@@ -33,7 +29,7 @@ How does it work ?
    
    -A or some specific days of week like:                                       
      
-     ::
+     ..
      
       --today                                                                 
       --weekend-days (saturday and sunday).                                   
@@ -77,13 +73,13 @@ datetime-config
   datetime-lock in case of an automatic configuration with cron, useable with  
   the substitution command: 
                                                     
-  :: 
+  .. 
   
     $ $(datetime-config -s) # per example                                        
  
   Who support following options:                                               
     
-    :: 
+    .. 
                                                                                
        -s              [start]                                                
        -d  hh:mm:ss    [date]                                                 
@@ -95,7 +91,7 @@ datetime-config
 Advices
 -------                                   
 
- If you are a  ``"security paranoid"``  like me I can give you the following      
+ If you are a  `"security paranoid"`  like me I can give you the following      
  advices who are not often used: 
                                               
  + Setting an password for the **BIOS**.                                         
